@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Dr. Sajid Mahboob</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+		<script src="https://kit.fontawesome.com/cadec32dcc.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<div class="topNavBar">
+			<ul class="hnavbar">
+				<li class="logo" id="element"> DR. SAJID MAHBOOB</li>
+				<li class="hnav"><a href="#registration" class="hnavbtn">REGISTERATION</a></li>
+				<li class="hnav"><a href="#feedback" class="hnavbtn">FEEDBACK</a></li>
+				<li class="hnav"><a href="#" class="hnavbtn">HOME</a></li><br>
+			</ul>
+		</div>
+
+		<div class="topNavBar">
+			<ul class="hnavbar">
+				<li class="logo01">
+				<pre style="text-align: center;">
+C O N S U L T A N T   N E U R O L O G I S T
+M . D .  F R O M  A M E R I C A</pre></li>
+			</ul>
+		</div>
+		
+		<video autoplay muted loop id="background-video">
+			<source src="video02.mp4" type="video/mp4">
+		</video>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+				<video style="width:100%" controls autoplay>
+					<source src="Annaya's Ad.mp4" type="video/mp4">
+				</video>
+			  <div class="text">Video One</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+				<video style="width:100%" controls autoplay>
+					<source src="Annaya's Main Ad LE.mp4" type="video/mp4">
+				</video>
+			  <div class="text">Video Two</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+			
+		</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			</div>
+		
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+
+			<div class="slideshow-container00" id="feedback">
+
+			<div class="mySlides00 fade">
+			<div class="numbertext00">1 / 3</div>
+				<div class="feedback_panel">
+					<div class="feedback">"I want to highly recommend Asher Sajid for his amazing work 
+						in setting up and managing Facebook Ads and installing the Facebook Pixel on my 
+						website. He was very responsive and available 24/7, so he was able to get the job 
+						done quickly and efficiently. I'm very impressed with his professionalism and 
+						knowledge."</div>
+				</div>
+			</div>
+			
+			<div class="mySlides00 fade">
+			<div class="numbertext00">2 / 3</div>
+				<div class="feedback_panel">
+					<div class="feedback">If you're looking for someone to help you with your social 
+						media marketing and website setup, I highly recommend giving Asher a try. He 
+						has helped me tremendously in this area, so I'm confident he can do the same 
+						for you."</div>
+				</div>
+			</div>
+			
+			<div class="mySlides00 fade">
+			<div class="numbertext00">3 / 3</div>
+				<div class="feedback_panel">
+					<div class="feedback">"Asher was so helpful and responsive throughout; his availability 
+						was around the clock and he was timely with responses, which really made a 
+						difference to my project. I highly recommend his services to anyone looking for 
+						assistance in their marketing campaigns or pixel setup."</div>
+				</div>
+			</div>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			<span class="Rdot"></span> 
+			<span class="Rdot"></span> 
+			<span class="Rdot"></span> 
+			</div>
+	
+		<script>
+			let slideIndex00 = 0;
+			showSlides00();
+			
+			function showSlides00() {
+			let i;
+			let slides = document.getElementsByClassName("mySlides00");
+			let Rdots = document.getElementsByClassName("Rdot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex00++;
+			if (slideIndex00 > slides.length) {slideIndex00 = 1}    
+			for (i = 0; i < Rdots.length; i++) {
+				Rdots[i].className = Rdots[i].className.replace(" active", "");
+			}
+			slides[slideIndex00-1].style.display = "block";  
+			Rdots[slideIndex00-1].className += " active";
+			setTimeout(showSlides00, 5000); // Change image every 2 seconds
+			}
+		</script>
+
+		<div class="reg" id="registration">REGISTER NOW</div>
+
+		<div class="info">
+			<div class="subinfo01">
+				<h1 class="head1">CONTACT US ON</h1>
+				<p><i class="fa-brands fa-square-whatsapp icon position"></i><span class="pakno"> +92</span><span class="whatsappno"> 327 2761877</span></p>
+				<p><i class="fa-solid fa-phone phoneicon position"></i><span class="pakno"> +92</span><span class="whatsappno"> 327 2761877</span></p>
+			</div>
+
+			<div class="subinfo02">
+				<p id="txt01">
+					Johnny Sins is a Famous American Portrait photographer, who was born on Sunday, Dec 31, 1978 in Pittsburgh, Pennsylvania USA. Find Johnny Sins age, wife, net worth, weight, height, career, family, pics biography & more.
+				</p>
+			</div>
+		</div>
+		
+		<div class="form">
+			<form action="" method="set">
+
+				<input type="text" id="fname" name="firstname" class="inputfield" placeholder="Enter Your First Name... (Required)" required><br>
+
+				<input type="text" id="lname" name="lastname" class="inputfield" placeholder="Enter Your Last Name... (Required)" required><br>
+				
+				<input type="text" id="email" name="Email" class="inputfield" placeholder="Phone Number OR Email Address... (Required)" required><br>
+
+				<input list="browsers" id="city" name="browser" class="inputfield" placeholder="Enter Your City...">
+				<datalist id="browsers">
+					<option value="Karachi">
+					<option value="Lahore">
+					<option value="Faisalabad">
+					<option value="Rawalpindi">
+					<option value="Multan">
+					<option value="Gujranwala">
+					<option value="Hyderabad">
+					<option value="Peshawar">
+					<option value="Islamabad">
+					<option value="Quetta">
+					<option value="Sargodha">
+					<option value="Sialkot">
+					<option value="Bahawalpur">
+					<option value="Sukkur">
+					<option value="Jhang">
+					<option value="Sheikhupura">
+					<option value="Mardan">
+					<option value="Gujrat">
+					<option value="Larkana">
+					<option value="Kasur">
+					<option value="Rahim Yar Khan">
+					<option value="Sahiwal">
+					<option value="Okara">
+					<option value="Wah">
+					<option value="Dera Ghazi Khan">
+					<option value="Mingora">
+					<option value="Chiniot">
+					<option value="Mirpur Khas">
+					<option value="Nawabshah">
+					<option value="Kamoke">
+					<option value="Burewala">
+					<option value="Jhelum">
+					<option value="Sadiqabad">
+					<option value="Khanewal">
+					<option value="Hafizabad">
+					<option value="Kohat">
+					<option value="Jacobabad">
+					<option value="Shikarpur">
+					<option value="Muzaffargarh">
+					<option value="Khanpur">
+					<option value="Gojra">
+					<option value="Bahawalnagar">
+					<option value="Abbottabad">
+					<option value="Muridke">
+					<option value="Khuzdar">
+					<option value="Pakpattan">
+					<option value="Jaranwala">
+					<option value="Chishtian">
+					<option value="Daska">
+					<option value="Mandi Bahauddin">
+					<option value="Ahmadpur East">
+					<option value="Kamalia">
+					<option value="Tando Adam">
+					<option value="Khairpur">
+					<option value="Dera Ismail Khan">
+					<option value="Vehari">
+					<option value="Nowshera">
+					<option value="Dadu, Pakistan">
+					<option value="Wazirabad">
+					<option value="Khushab">
+					<option value="Charsadda">
+					<option value="Swabi">
+					<option value="Chakwal">
+					<option value="Mianwali">
+					<option value="Turbat">
+					<option value="Tando Allahyar">
+					<option value="Kot Adu">
+					<option value="Chaman">
+					<option value="Hub, Balochistan">
+					<option value="Arifwala">
+					<option value="Chichawatni">
+					<option value="Kharian">
+					<option value="Taxila">
+					<option value="Layyah">
+					<option value="Hasilpur">
+					<option value="Attock">
+					<option value="Jalalpur">
+					<option value="Bhakkar">
+					<option value="Lodhran">
+					<option value="Mian Channu">
+					<option value="Shorkot">
+					<option value="Harunabad">
+					<option value="Bhalwal">
+					<option value="Kandhkot">
+					<option value="Lalamusa">
+					<option value="Kot Abdul Malik">
+					<option value="Toba Tek Singh">
+					<option value="Pattoki">
+					<option value="Kahror Pacca">
+					<option value="Chuhar Kana">
+					<option value="Gujar Khan">
+					<option value="Narowal">
+					<option value="Tando Muhammad Khan">
+					<option value="Shujabad">
+					<option value="Sibi">
+					<option value="Badin">
+					<option value="Kotri">
+					<option value="Dipalpur">
+					<option value="Pano Aqil">
+					<option value="Shabqadar">
+					<option value="Shahdadkot">
+					<option value="Phool Nagar">
+					<option value="Moro">
+					<option value="Ferozwala">
+					<option value="Sammundri">
+					<option value="Mailsi">
+					<option value="Shahdadpur">
+					<option value="Mansehra">
+					<option value="Qambar">
+					<option value="Haveli Lakha">
+					<option value="Zhob">
+					<option value="Gwadar">
+					<option value="Jampur">
+					<option value="Takht-i-Bahi">
+					<option value="Shakargarh">
+					<option value="Sangla Hill">
+					<option value="Nankana Sahib">
+					<option value="Sambrial">
+					<option value="Haripur, Pakistan">
+					<option value="Bannu">
+					<option value="Hujra Shah Muqeem">
+					<option value="Ghotki">
+					<option value="Kabirwala">
+					<option value="Sanghar">
+					<option value="Chunian">
+					<option value="Gakhars">
+					<option value="Timergara">
+					<option value="Dera Murad Jamali">
+					<option value="Pasrur">
+					<option value="Dera Allah Yar">
+					<option value="Usta Mohammad">
+					<option value="Rajanpur">
+					<option value="Rabwah">
+					<option value="Dullewala">
+					<option value="Qila Didar Singh">
+					<option value="Rohri">
+					<option value="Shahkot, Pakistan">
+					<option value="Hadali">
+					<option value="Jauharabad">
+					<option value="Batkhela">
+					<option value="Alipur Chatha">
+					<option value="Kot Radha Kishan">
+					<option value="Kahna Nau">
+					<option value="Dina, Pakistan">
+					<option value="Matli">
+					<option value="Jatoi, Pakistan">
+					<option value="Taunsa Sharif">
+					<option value="Abdul Hakeem, Pakistan">
+					<option value="Hasan Abdal">
+					<option value="Mirpur Mathelo">
+					<option value="Sarai Alamgir">
+					<option value="Loralai">
+					<option value="Kamra">
+					<option value="Mustafabad, Punjab">
+					<option value="Hala, Sindh">
+					<option value="Talagang">
+					<option value="Ratodero">
+					<option value="Basirpur">
+					<option value="Khalabat Township">
+					<option value="Tank, Pakistan">
+					<option value="Fort Abbas">
+					<option value="Kot Moman">
+					<option value="Nowshera Virkan">
+					<option value="Tandlianwala">
+					<option value="Thatta">
+					<option value="Ludhewala Waraich">
+					<option value="Dinga">
+					<option value="Kundian">
+					<option value="Pasni (city)">
+					<option value="Chowk Azam">
+					<option value="Havelian">
+					<option value="Risalpur">
+					<option value="Umerkot">
+					<option value="Sahiwal">
+					<option value="Pabbi">
+					<option value="Jalalpur Pirwala">
+					<option value="Chak Jhumra">
+					<option value="Liaqauatpur">
+					<option value="Renala Khurd">
+					<option value="Sehwan Sharif">
+					<option value="Jehangira">
+					<option value="Bhera">
+					<option value="Lakki Marwat">
+					<option value="Topi, Khyber Pakhtunkhwa">
+					<option value="Malakwal">
+					<option value="Hangu, Pakistan">
+					<option value="Chitral">
+					<option value="Daharki">
+					<option value="Kharan, Pakistan">
+					<option value="Pir Mahal">
+					<option value="Khurrianwala">
+					<option value="Pindigheb">
+					<option value="Pindi Bhattian">
+					<option value="Badah">
+					<option value="Narang, Gujrat">
+					<option value="Zāhir Pīr">
+					<option value="Dunyapur">
+					<option value="Mastung, Pakistan">
+					<option value="Alipur Chatha">
+					<option value="Lalian">
+				</datalist><br>
+				
+				<label for="Urdu Speaking" id="language" class="label">CAN YOU SPEAK URDU? <span class="reddot">*</span></label>
+				<select id="language" name="Urdu Speaking" class="inputfield" required>
+					<option value="Yes">YES</option>
+					<option value="No">NO</option>
+				</select>
+
+				<textarea name="Virus" id="virus" class="margin" cols="30" rows="10" placeholder="Describe your problem or illness explicitly..."></textarea><br>
+				<input class="submit" type="submit">
+				<input class="reset" type="reset">
+				
+			</form>
+		</div>
+
+		<div class="audios">
+			<audio src="Audios/Write your first name.mp3" id="fn"></audio>
+			<audio src="Audios/Write your last name.mp3" id="ln"></audio>
+			<audio src="Audios/Email-PoNo.mp3" id="elpn"></audio>
+			<audio src="Audios/City Name.mp3" id="cn"></audio>
+			<audio src="Audios/Urdu speaking.mp3" id="aus"></audio>
+			<audio src="Audios/Describe your problem.mp3" id="dyp"></audio>
+		</div>
+
+		<script>
+			let fname = document.getElementById('fname');
+			let lname = document.getElementById('lname');
+			let email = document.getElementById('email');
+			let city = document.getElementById('city');
+			let lang = document.getElementById('language');
+			let virus = document.getElementById('virus');
+			const fnpaudio = document.getElementById('fn');
+			const lnpaudio = document.getElementById('ln');
+			const elpnpaudio = document.getElementById('elpn');
+			const cnpaudio = document.getElementById('cn');
+			const auspaudio = document.getElementById('aus');
+			const dypaudio = document.getElementById('dyp');
+
+			fname.addEventListener('focus', function handleMouseOver() {
+				fnpaudio.play();
+			});
+			fname.addEventListener('blur', function handleMouseOver() {
+				fnpaudio.pause();
+				fnpaudio.currentTime = 0;
+			});
+
+			lname.addEventListener('focus', function handleMouseOver() {
+				lnpaudio.play();
+			});
+			lname.addEventListener('blur', function handleMouseOver() {
+				lnpaudio.pause();
+				lnpaudio.currentTime = 0;
+			});
+
+			email.addEventListener('focus', function handleMouseOver() {
+				elpnpaudio.play();
+			});
+			email.addEventListener('blur', function handleMouseOver() {
+				elpnpaudio.pause();
+				elpnpaudio.currentTime = 0;
+			});
+
+			city.addEventListener('focus', function handleMouseOver() {
+				cnpaudio.play();
+			});
+			city.addEventListener('blur', function handleMouseOver() {
+				cnpaudio.pause();
+				cnpaudio.currentTime = 0;
+			});
+
+			lang.addEventListener('mouseover', function handleMouseOver() {
+				auspaudio.play();
+			});
+			lang.addEventListener('mouseleave', function handleMouseOver() {
+				auspaudio.pause();
+				auspaudio.currentTime = 0;
+			});
+
+			virus.addEventListener('focus', function handleMouseOver() {
+				dypaudio.play();
+			});
+			virus.addEventListener('blur', function handleMouseOver() {
+				dypaudio.pause();
+				dypaudio.currentTime = 0;
+			});
+		</script>
+
+		<div class="footer">
+			<p>Dr. Sajid Mahboob is the partner of johny sins commonly known as his right hand. Dr. Sajid Mahboob taught him how to be more than excellent in what he is now.
+				Many People call Dr. Sajid Mahboob as the main reason for the success and prosperity of Johny Sins.
+				Along with that Dr. Sajid Mahboob has also made many investments in companies like "Naughty America : Nobody does it better" to secure & modify the future of our youth.
+			</p>
+		</div>
+	</body>
+</html>

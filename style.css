@@ -1,0 +1,407 @@
+::selection{
+	color: white;
+	background-color: yellowgreen;
+}
+
+body{
+	margin: 0;
+	background-color: #111;
+	font-family: Verdana, sans-serif; margin:0
+}
+
+* {box-sizing: border-box}
+
+/*Navigation Bar*/
+.hnavbar{
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+
+.logo{
+	float: left;
+	padding: 15px 25px;
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	background-color: olivedrab;
+	text-shadow: 1px 1px 1px black;
+}
+
+.logo01{
+	float: left;
+	padding: 0 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(112, 158, 21);
+	text-shadow: 1px 1px 1px black;
+}
+
+.hnav{
+	float: right;
+}
+
+.hnavbtn{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 25px 25px;
+	transition: 0.4s;
+}
+
+.hnavbtn:hover{
+	text-decoration: underline;
+	text-shadow: 4px 4px 14px #d9d9d9;
+	background-color: crimson;
+	font-size: 17px;
+	text-shadow: 5px 5px 15px black;
+}
+/*Navigation Bar*/
+
+#background-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+  }
+
+/*Profile Videos*/
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 35px 16px;
+  margin-top: -22px;
+  color: #111;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #bbb;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*Profile Videos*/
+
+@media screen AND (max-width:950px) {
+	.abinbtn{
+		margin-left: 4%;
+	}
+
+	.gallery{
+		width: 45%;
+	}
+}
+
+@media screen AND (max-width:850px) {
+	.abinbtn{
+		margin-left: 3%;
+	}
+}
+
+/*FeedBack*/
+.mySlides00 {display: none;}
+img {vertical-align: middle;}
+
+.feedback_panel{
+	width: 100%;
+	background-color: white;
+	padding: 150px 100px;
+	font-size: 20px;
+}
+
+.feedback{
+	color: #111;
+	text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container00 {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Caption text */
+.JText {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext00 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The Rdots/bullets/indicators */
+.Rdot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: none;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .JText {font-size: 11px}
+}
+/*FeedBack*/
+
+/*Contact Form*/
+.reg{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	background-color: aquamarine;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	padding: 15px;
+	color: white;
+	font-style: bolder;
+	font-size: 35px;
+	font-family:"Playfair Display", serif; font-weight:400;
+	border-left: 5px solid rgb(34, 131, 99);
+	border-right: 5px solid rgb(34, 131, 99);
+}
+
+.label{
+	text-align: center;
+	padding: 0 27%;
+	color: white;
+	font-family:"Playfair Display", serif; font-weight:400;
+	font-size: 20px;
+}
+
+#virus{
+	width: 100%;
+	resize: vertical;
+	font-family:"Playfair Display", serif; font-weight:400;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.reddot{
+	color: rgb(221, 50, 50);
+}
+
+.form{
+	width: 50%;
+	padding: 20px;
+	background-color: #4242426e;
+}
+
+.inputfield{
+	width: 100%;
+	padding: 10px 10px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.inputfield:focus{
+	border: 1px solid orangered;
+}
+
+.margin{
+	margin-bottom: 15px;
+}
+
+.submit{
+	width: 73%;
+	padding: 15px;
+	color: white;
+	background-color: rgb(107, 103, 47);
+	border: 1px solid darkolivegreen;
+}
+
+.reset{
+	width: 26%;
+	padding: 15px;
+	color: white;
+	background-color: crimson;
+	border: 1px solid crimson;
+}
+
+.submit:hover{
+	background-color: dodgerblue;
+	color: whitesmoke;
+	border: 1px solid blue;
+	box-shadow: 5px 5px 15px black;
+}
+
+.reset:hover{
+	background-color: purple;
+	color: whitesmoke;
+	border: 1px solid rgb(69, 10, 69);
+	box-shadow: 5px 5px 15px black;
+}
+
+.info{
+	float: right;
+	margin-right: 10px;
+	width: 47%;
+}
+
+.subinfo01{
+	padding: 20px;
+	background-color: #4242426e;
+}
+
+.subinfo02{
+	margin-top: 10px;
+	padding: 20px;
+	background-color: #4242426e;
+	color: white;
+}
+
+.head1{
+	color: white;
+}
+
+.pakno{
+	color: greenyellow;
+}
+
+.whatsappno{
+	color: white;
+}
+
+.icon{
+	color: #41d025;
+	font-size: 30px;
+}
+
+.phoneicon{
+	color: dodgerblue;
+	font-size: 25px;
+}
+
+.position{
+	position: relative;
+	top: 5px;
+}
+
+/*Contact Form*/
+
+/*footer*/
+.footer{
+	clear: both;
+	color: black;
+	text-align: center;
+	background-color: #d9d9d9;
+	padding: 25px 75px;
+	margin-top: 35px;
+}
+/*footer*/
