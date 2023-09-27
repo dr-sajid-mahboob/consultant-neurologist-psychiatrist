@@ -2,6 +2,8 @@
 <html lang="en-us">
 	<head>
 		<title>Dr. Sajid Mahboob</title>
+		<meta name="description" content="M.B.B.S (Dow), M.D. (U.S.A). Diplomat American Board of Psychiatry and Neurology. Consultant Neurologist.">
+		<meta name="keywords" content="Psychiatry, Neurology, M.D. from America, M.B.B.S from Dow Medical, Neurologist">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
@@ -13,9 +15,9 @@
 		<div class="topNavBar">
 			<ul class="hnavbar">
 				<li class="logo" id="element"> DR. SAJID MAHBOOB</li>
-				<li class="hnav"><a href="#registration" class="hnavbtn">REGISTERATION</a></li>
-				<li class="hnav"><a href="#feedback" class="hnavbtn">FEEDBACK</a></li>
-				<li class="hnav"><a href="#" class="hnavbtn">HOME</a></li><br>
+				<li class="hnav close"><a href="#registration" class="hnavbtn">REGISTERATION</a></li>
+				<li class="hnav close"><a href="#feedback" class="hnavbtn">FEEDBACK</a></li>
+				<li class="hnav close"><a href="#" class="hnavbtn">HOME</a></li><br>
 			</ul>
 		</div>
 
@@ -37,7 +39,7 @@ M . D .  F R O M  A M E R I C A</pre></li>
 			<div class="mySlides fade">
 			  <div class="numbertext">1 / 3</div>
 				<video style="width:100%" controls autoplay>
-					<source src="Annaya's Ad.mp4" type="video/mp4">
+					<source id="vid1" src="Annaya's Ad.mp4" type="video/mp4">
 				</video>
 			  <div class="text">Video One</div>
 			</div>
@@ -62,6 +64,7 @@ M . D .  F R O M  A M E R I C A</pre></li>
 			</div>
 		
 			<script>
+			var vid1 = document.getElementById('vid1');
 			let slideIndex = 1;
 			showSlides(slideIndex);
 			
@@ -80,7 +83,7 @@ M . D .  F R O M  A M E R I C A</pre></li>
 			  if (n > slides.length) {slideIndex = 1}    
 			  if (n < 1) {slideIndex = slides.length}
 			  for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
+				slides[i].style.display = "none";
 			  }
 			  for (i = 0; i < dots.length; i++) {
 				dots[i].className = dots[i].className.replace(" active", "");
@@ -156,7 +159,7 @@ M . D .  F R O M  A M E R I C A</pre></li>
 
 		<div class="reg" id="registration">REGISTER NOW</div>
 
-		<div class="info">
+		<div class="info close">
 			<div class="subinfo01">
 				<h1 class="head1">CONTACT US ON</h1>
 				<p><i class="fa-brands fa-square-whatsapp icon position"></i><span class="pakno"> +92</span><span class="whatsappno"> 327 2761877</span></p>
@@ -394,6 +397,20 @@ M . D .  F R O M  A M E R I C A</pre></li>
 				<input class="reset" type="reset">
 				
 			</form>
+		</div>
+
+		<div class="info open">
+			<div class="subinfo01">
+				<h1 class="head1">CONTACT US ON</h1>
+				<p><i class="fa-brands fa-square-whatsapp icon position"></i><span class="pakno"> +92</span><span class="whatsappno"> 327 2761877</span></p>
+				<p><i class="fa-solid fa-phone phoneicon position"></i><span class="pakno"> +92</span><span class="whatsappno"> 327 2761877</span></p>
+			</div>
+
+			<div class="subinfo02">
+				<p id="txt01">
+					Johnny Sins is a Famous American Portrait photographer, who was born on Sunday, Dec 31, 1978 in Pittsburgh, Pennsylvania USA. Find Johnny Sins age, wife, net worth, weight, height, career, family, pics biography & more.
+				</p>
+			</div>
 		</div>
 
 		<div class="audios">
